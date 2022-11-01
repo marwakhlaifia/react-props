@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Profile from "./Profile/Components/Profile";
+import picture from "./marwa.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile
+        fullName="khlaifia marwa"
+        bio="Jeune diplômé du Mastère « Expert En Cyber Sécurité » Dynamique, passionné par les nouvelles technologies. J’ai acquis au cours de mes études et mes premiers stages professionnels une forte sensibilité au travail en équipe, au sens de l’engagement, au respect des normes de qualité et l’importance d’une bonne réactivité."
+      >
+        <img src={picture} alt="profile"></img>
+      </Profile>
     </div>
   );
 }
